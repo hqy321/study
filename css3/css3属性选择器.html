@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+		    /*   =  就是完全等于的*/
+			input[type=text]{
+				background: red;
+			}
+			input[value=hqy]{
+				background: black;
+			}
+			/*  ^=以什么为开头的*/
+			input[value^=q]{
+				background: yellow;
+			}
+			/*  $=以什么为结束的*/
+			input[value$=a]{
+				background: orange;
+			}
+			/*  *=包含有xx的*/
+			input[value*=s]{
+				background: blue;
+			}
+		</style>
+	</head>
+	<body>
+	         <!--选择器：  标签    群组   子代   id  class  name  -->
+	         <!-- css3：属性选择器-->
+	          <input type="text" value="hqy"/>
+	          <input type="text" value="hsqy"/>
+	          <input type="text" />
+	          <input type="text" value="qsya"/>
+	          <input type="text" value="qya"/>
+	          <input type="password"/>
+	</body>
+</html>

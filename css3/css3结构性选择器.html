@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 E:nth-child(n)    选择父级元素下面的第几个元素
+			                   元素下标从1开始
+			 E:nth-of-type()   清除不是E的再进行筛选            
+			 */
+			li:nth-child(4){
+				background: blue;
+			}
+			li:nth-of-type(2){
+				background: yellow;
+			}
+			li:nth-of-type(even){      /*偶数*/
+				background: yellow;
+			}
+			li:nth-of-type(odd){    /*奇数*/
+				background: blue;
+			}
+			li:nth-last-of-type(3){
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!--结构性选择器：-->
+    
+	    <ul>
+			<li><a href="#">结构性选择器</a></li>
+		
+			<li><a href="#">结构性选择器</a></li>
+			<li><a href="#">结构性选择器</a></li>
+			<li><a href="#">结构性选择器</a></li>
+			<li><a href="#">结构性选择器</a></li>
+			<li><a href="#">结构性选择器</a></li>
+			<li><a href="#">结构性选择器</a></li>
+			<li><a href="#">结构性选择器</a></li>
+			<li><a href="#">结构性选择器</a></li>			
+		</ul>
+	</body>
+</html>

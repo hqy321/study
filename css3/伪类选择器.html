@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				width: 600px;
+				height: 300px;
+				border: 1px solid #000;
+				text-indent: 2em;
+			}
+			p:first-line{
+				color: red;
+			}
+			p:first-letter{
+				font-size: 30px;  /*p元素的第一个字符*/
+			}
+			p::selection{
+				background: yellow;
+				color: red;
+			}
+			p:before{
+				content:"发红包！发红包！"
+			}
+			p:after{
+				content:"没人给发  不高兴   好桑心";
+				color: blue;
+				font-size: 40px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--伪类选择器-->
+		<!--love hate
+			a:link    a:visited  a:hover  a:active
+		-->
+		<p>首先伪类的特殊性（应用优先级）是同样的，所以后出现的伪类会覆盖先出现的伪类（同时激活） lvha 规则是由于CSS特殊性导致，有一个按顺序的规则（同一条css规则，后出现会覆盖前面的同样规则）在这里，比如把hover放在active后面，那么实际你在激活（active）链接的时候就触发了hover伪类，hover在后面覆盖了active的颜色，所以始终无法看到active的颜 如果把visited放在hover的后面，那么已经访问过的链接始终触发visited伪类，根据第一条会覆盖hover里面的颜色。 
+		</p>
+	</body>
+</html>

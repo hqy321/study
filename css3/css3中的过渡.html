@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				background: red;
+				transition: 1s width,2s 5s height;/*运动时间2s   延迟5s*/
+				
+			}
+			div:hover{
+				width: 1000px;
+				height: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+		css3的过渡-transition  4个参数  没有顺序
+		时间    单位s   
+		过渡样式    width height  background   
+		过渡形式    ease  逐渐变慢     linear  匀速    
+		延迟时间    单位s	
+		
+		ease：（逐渐变慢）默认
+		linear：（匀速）
+		ease-in：（加速）
+		ease-out：（减速）
+		ease-in-out：（由慢到快再到慢）
+		-->
+		<div></div>
+	</body>
+</html>
